@@ -1,0 +1,198 @@
+@import url("https://fonts.google.com/specimen/Inter");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+.main-body{
+  display: flex;
+  
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  
+
+}
+
+.card{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.container{
+  position: relative;
+  margin: 10px;
+  width:200px;
+  height: 380px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.image{
+  max-width: 100%;
+  min-width: 200px;
+  max-height: 266px;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.button{
+  background-color: black;
+  width: 95%;
+  color: aliceblue;
+  border-radius: 2px;
+  height: 35px;
+  margin: 3px;
+  border-radius: 3px;
+  
+}
+
+.button:hover{
+  cursor: pointer;
+}
+
+.title-vendor{
+  display: flex;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+}
+
+.all-price{
+  display: flex;
+   gap: 5px;
+   margin: 3px;
+   font-family: 'Inter', sans-serif;
+}
+
+
+.compare-price{
+  text-decoration: line-through;
+  color:  #8F8F8F;
+  font-family: 'Inter', sans-serif;
+}
+
+.overlay-text {
+  width: 100px;
+  height: 25px;
+  font-size: 12px;
+  text-align: center;
+  padding: 5px;
+  size: 5px;
+  position: absolute;
+  background-color: #ffffff;
+  top: 10px;
+  left: 10px;
+  
+  color: #000000;
+  font-weight: bold;
+  text-align: center;
+  z-index: 1;
+  border-radius: 1px;
+}
+
+.image-container{
+  position: relative;
+  border-radius: 2px;
+}
+
+.title-vendor{
+  gap: 4px;
+  margin: 3px;
+  
+}
+
+
+.title-head{
+  font-weight: 900;
+  margin-bottom: 50px;
+  font-size: 50px;
+  font-family: 'Inter', sans-serif;
+}
+
+
+
+.select-button{
+  display: flex;
+  width: 500px;
+}
+
+/* Style for the custom button */
+.custom-button {
+  flex: 1;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(242,242,242);
+  color: black;
+  border: none;
+  
+  font-size: 25px;
+  cursor: pointer;
+
+}
+
+.select-button{
+  margin-bottom: 20px;
+  width:45em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.active-button{
+      background-color: black;
+      border-radius: 3px;
+      color: beige;
+}
+.emoji-active{
+    display: inline;
+}
+.emoji-disable{
+    display: none;
+}
+
+/* Style for the custom button when the radio is checked */
+.radio-button:checked + .custom-button {
+  background-color: #0056b3;
+}
+
+
+
+@media (max-width: 767px){
+  .main-body{
+    display: flex;
+  
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    
+  
+  }
+
+  .select-button{
+    margin-bottom: 20px;
+    width:45em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-left: 30px;
+  }
+
+  .title-head{
+    font-weight: 900;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+}
+
+span{
+  margin-right: 5px;
+  font-size: 25px;
+}
